@@ -1,7 +1,7 @@
 - name: variables from paly level
   hosts: localhost
   vars:
-    course: "DevOps"
+    Course: "DevOps"
     Trainer: "SivaKumar"
     Duration: "6 months"
   tasks:
