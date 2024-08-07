@@ -1,3 +1,4 @@
+# variables from the inventory.ini file
 - name: variables from PLAY level
   hosts: localhost
   tasks:
