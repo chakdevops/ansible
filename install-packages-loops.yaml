@@ -1,5 +1,5 @@
 - name: loops
-  hosts: localhost
+  hosts: web
   become: yes # become:yes means, becoming root user and it got sudo privilages
   tasks:
   - name: Install packages
@@ -9,7 +9,7 @@
     loop:
     - git
     - mysql
-    - nginx
+    - nginx 
   - name: start Nginx
     service:     
       name: nginx
