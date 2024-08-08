@@ -1,6 +1,6 @@
 # Uninstall few packages
 - name: loops
-  hosts: web
+  hosts: localhost
   become: yes
   tasks:
   - name: install or uninstall packages
