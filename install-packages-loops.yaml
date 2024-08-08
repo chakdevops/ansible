@@ -6,11 +6,12 @@
     ansible.builtin.package:
       name: "{{item}}" # item is a default keyword
       state: present # state=present means install
-  - name: start Nginx
-    service:     
-      name: nginx
-      state: started   
     loop:
     - git
     - mysql
     - nginx
+  - name: start Nginx
+    service:     
+      name: nginx
+      state: started   
+    
